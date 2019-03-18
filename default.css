@@ -141,6 +141,7 @@ a:hover {
     margin-left: 12em;
 }
 
+
 #content img.left{
    float: left;
    padding: 0.25em;
@@ -154,7 +155,6 @@ a:hover {
    float: right;
    padding: 0.25em;
    padding-right: 1em;
-   height: auto;
 }
 #esquerda {
    float: left;
