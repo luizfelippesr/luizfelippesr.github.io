@@ -154,6 +154,7 @@ a:hover {
    float: right;
    padding: 0.25em;
    padding-right: 1em;
+   height: auto;
 }
 #esquerda {
    float: left;
