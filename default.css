@@ -14,7 +14,7 @@ h1{
 }
 h2{
    font-size: 1.1em;
-   
+
    padding-top: 1em;
 }
 h3{
@@ -34,8 +34,8 @@ address{
 }
 
 ul {
-    list-style-type: circle; 
-} 
+    list-style-type: circle;
+}
 /* li { padding: 1;} */
 
 a {
@@ -213,7 +213,6 @@ color: white    ;
   float: left;
   width: 45%;
   padding: 10px;
-  /*height: 300px; /* Should be removed. Only for demonstration */
 }
 
 /* Clear floats after the columns */
@@ -224,16 +223,52 @@ color: white    ;
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 550px) {
-  .column {
+.column {
     width: 100%;
   }
-  #content img.left, #content img.right{
+#content img.left, #content img.right{
     float: center;
     width: 49%;
     padding-right: 20%;
     padding-left: 20%;
+       height: auto;
+
   }
-  #updatepanel
+#updatepanel
   { display:none }
+
+
+
+@media screen and (min-width: 400px) {
+  .column {
+    float: left;
+    width: 45%;
+    padding: 10px;
+  }
+  #content img.right{
+    float: right;
+    padding: 0.25em;
+    padding-right: 1em;
+  }
+  #updatepanel{
+    float: right;
+    display: inline;
+    text-align: right;
+    font-variant:normal;
+        font-size: 0.6em;
+    color: white    ;
+  }
+  #content img.left{
+   float: left;
+   padding: 0.25em;
+   margin-right: 2em;
+   width: 25%;
+  }
+
+  #content img.right{
+    float: right;
+    padding: 0.25em;
+    padding-right: 1em;
+    width: 27%;
+  }
 }
